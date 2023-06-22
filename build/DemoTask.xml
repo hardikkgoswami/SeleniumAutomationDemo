@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AmazonSearchPage" verbose="10" parallel="tests"
+	thread-count="1">
+
+	<parameter name="selenium.url"
+			   value="https://www.google.com/" />
+
+<!--	&lt;!&ndash; Test Case 1 ::  &ndash;&gt;-->
+<!--	<test name="Amazon Search : search for a specific phone model print the cost of the top 3 results alongside their color">-->
+<!--		<classes>-->
+<!--			<class name="Test.AmazonSearchTest">-->
+<!--				<methods>-->
+<!--					<include name="AmazonSearch"></include>-->
+<!--				</methods>-->
+<!--			</class>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+	<!-- Test Case 2 ::  -->
+	<test name="Expedia : search for flight tickets on expedia.com ">
+		<classes>
+			<class name="Test.FlightSearchTest">
+				<methods>
+					<include name="searchFlightTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
